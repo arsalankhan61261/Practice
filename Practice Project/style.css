@@ -29,8 +29,6 @@ body {
 h2 {
     text-align: center;
     margin: 0 0 20px;
-    font-family: 'Arial',sans-serif;
-    color: #869EB2;
 }
 
 .form {
@@ -86,13 +84,12 @@ h2 {
 .form button {
     cursor: pointer;
     background-color: #869EB2;
-    border: 2px solid #afc9c8;
+    border: 2px solid;
     border-radius: 4px;
-    color: #d3e6e5;
+    color: white;
     display: block;
     font-size: 15px;
     padding: 5px;
     margin-top: 10px;
     width: 25%;
-    box-shadow: 0 8px 12px gray;
 }
