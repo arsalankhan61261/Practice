@@ -52,8 +52,8 @@ h2 {
     border-radius: 8px;
     display: block;
     width: 100%;
-    padding: 6px;
-    font-size: 12px;
+    padding: 8px;
+    font-size: 14px;
 }
 
 .form-control input:focus {
