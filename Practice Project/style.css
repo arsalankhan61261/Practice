@@ -10,7 +10,7 @@
 }
 
 body {
-    background-color: #869EB2;
+    background-image: url("background.jpg");
     font-family: 'Roboto', sans-serif;
     display: flex;
     align-items: center;
