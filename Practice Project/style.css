@@ -19,11 +19,28 @@ body {
     margin: 0;
 }
 
+.bg-img::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.8;
+    background-image: url('Images/background1.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: grayscale(25%);
+}
+
 .container {
     background-color: #b3afab;
     border-radius: 5px;
     box-shadow: 0 8px 16px rgba(0,0,0, 0.3);
     width: 400px;
+    position: relative;
+    
 }
 
 h2 {
