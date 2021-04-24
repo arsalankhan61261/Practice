@@ -36,7 +36,7 @@ body {
 }
 
 .container {
-    background-color: #b3afab;
+    background-color: gray;
     border-radius: 5px;
     box-shadow: 0 8px 16px rgba(0,0,0, 0.3);
     width: 400px;
@@ -60,7 +60,8 @@ body {
 .container input.box {
     height: 12px;
     width: 12px;
-    background-color: chartreuse;
+    top: 0px;
+    left: 0px;
 }
 
 h2 {
