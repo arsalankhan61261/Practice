@@ -13,8 +13,6 @@ body {
     background-color: #869EB2;
     font-family: 'Roboto', sans-serif;
     display: flex;
-    align-items: center;
-    justify-content: center;
     float: right;
     min-height: 100vh;
     margin: 0;
