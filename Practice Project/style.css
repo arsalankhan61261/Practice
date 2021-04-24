@@ -41,7 +41,26 @@ body {
     box-shadow: 0 8px 16px rgba(0,0,0, 0.3);
     width: 400px;
     position: relative;
-    
+}
+.container a {
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #456264;
+    text-indent: 50px;
+    display: inline-block;
+    margin: 25px;
+    margin-bottom: 0px;
+}
+
+.container label {
+    font-size: 14px;
+    color: whitesmoke;    
+}
+
+.container input.box {
+    height: 12px;
+    width: 12px;
+    background-color: chartreuse;
 }
 
 h2 {
