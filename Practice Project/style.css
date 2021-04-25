@@ -32,13 +32,18 @@ body {
     filter: grayscale(30%);
 }
 
+@media (width:600px) {
+    .container {
+        margin: 0;
+    }
+}
+
 .container {
     background-color: transparent;
     border-radius: 5px;
     box-shadow: 0 2px 12px rgba(0,0,0, 0.3);
     width: 400px;
-    margin-right: 0px;
-    margin-left: 20px;
+    margin-right: 30px;
     position: relative;
 }
 .container a {
