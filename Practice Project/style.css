@@ -7,7 +7,7 @@
 
 * {
     box-sizing: border-box;
-    margin: 0;
+    margin: 0px;
 }
 
 body {
@@ -31,12 +31,6 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     filter: grayscale(30%);
-}
-
-@media (width:600px) {
-    .container {
-        margin: 0;
-    }
 }
 
 .container {
