@@ -10,6 +10,13 @@
     margin: 0px;
 }
 
+@media (width:600px) {
+    body {
+        margin: 0;
+        float: none;
+    }
+}
+
 body {
     background-color: #869EB2;
     font-family: 'Roboto', sans-serif;
