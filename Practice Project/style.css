@@ -11,6 +11,14 @@
 }
 
 @media (width:600px) {
+
+    .form-control input {
+        width: 50%;
+    }
+
+    .container {
+        width: none;
+    }
     body {
         margin: 0px;    
     }
