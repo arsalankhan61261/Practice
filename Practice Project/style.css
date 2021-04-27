@@ -12,8 +12,8 @@
 
 @media (width:600px) {
 
-    .form-control input {
-        width: 50px;
+    .form-control {
+        width: 50%;
     }
 
     .container {
