@@ -10,7 +10,7 @@
     margin: 0;
 }
 
-@media (width:600px) {
+@media (width:300px) {
 
     #form {
         float: none;
