@@ -51,10 +51,10 @@ body {
     border-radius: 5px;
     box-shadow: 0 2px 12px rgba(0,0,0, 0.3);
     width: 400px;
-    margin-right: 30px;
+    /* margin-right: 30px; */
     position: relative;
     margin-top: 0px;
-    /* float: right; */
+    float: right;
 }
 
 .container a {
