@@ -13,7 +13,7 @@
 @media (max-width: 600px) {
 
     #con {
-        float: none;
+        float: center;
         width: auto;
         margin: 0;
     }
