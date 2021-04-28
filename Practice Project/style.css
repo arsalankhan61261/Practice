@@ -13,9 +13,10 @@
 @media (max-width: 600px) {
 
     #con {
-        float: center;
+        float: none;
         width: auto;
         margin: 0;
+        align-items: center;
     }
     
     body {
