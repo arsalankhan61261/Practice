@@ -17,7 +17,7 @@
     }
 
     .container {
-        width: none;
+        float: none;
     }
     
     body {
