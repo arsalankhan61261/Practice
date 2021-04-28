@@ -54,7 +54,7 @@ body {
     margin-right: 30px;
     position: relative;
     margin-top: 0px;
-    float: right;
+    /* float: right; */
 }
 
 .container a {
