@@ -18,6 +18,7 @@
 
     .container {
         float: none;
+        width: auto;
     }
     
     body {
