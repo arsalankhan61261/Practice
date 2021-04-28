@@ -29,7 +29,9 @@ body {
     background-color: #869EB2;
     font-family: 'Roboto', sans-serif;
     min-height: 100vh;
-    margin-top: 40px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 .bg-img::before {
