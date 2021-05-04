@@ -73,13 +73,6 @@ body {
     color: whitesmoke;    
 }
 
-.container input.box {
-    height: 12px;
-    width: 12px;
-    top: 0px;
-    left: 0px;
-}
-
 h2 {
     text-align: center;
     margin: 0 0 20px;
