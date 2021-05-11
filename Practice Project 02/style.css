@@ -42,11 +42,11 @@ body {
 }
 
 .seat.selected {
-    background-color: #0C2D48;
+    background-color: #122620;
 }
 
 .seat.occupied {
-    background-color: #122620;
+    background-color: #05445E;
 }
 
 .seat:nth-of-type(2) {
@@ -57,7 +57,54 @@ body {
     margin-left: 20px;
 }
 
+.seat:not(.occupied):hover {
+    cursor: pointer;
+    transform: scale(1.25);
+}
+
+.showcase .seat:not(.occupied):hover {
+    cursor: default;
+    transform: scale(1);
+}
+
+.showcase {
+    background-color: rgba(0, 0, 0,0.1);
+    padding: 5px 10px;
+    border-radius: 10px;
+    list-style-type: none;
+    display: flex;
+}
+
+.showcase li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+}
+
+.showcase li small {
+    margin-left: 3px;
+}
+
 .row {
     display: flex;
+}
+
+.screen {
+    background-color: white;
+    height: 70px;
+    width: 100%;
+    margin: 15px 0;
+    transform: rotateX(-45deg);
+    box-shadow: 0 3px 10px rgba(255, 255, 255,0.7);
+}
+
+.container {
+    perspective: 1000px;
+    margin-bottom: 50px;
+}
+
+p.text span {
+    color: #122620;
 }
 
