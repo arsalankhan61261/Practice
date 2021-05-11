@@ -1,9 +1,35 @@
-@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
 
 * {
     box-sizing: border-box;
 }
 
 body {
-    background-image: url(Image/Theater.jpg);
+    background-color: slategray;
+    display: flex;
+    flex-direction: column;
+    color: whitesmoke;
+    font-family: 'Itim', cursive;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    font-size: 18px;
 }
+
+.movie-container {
+    margin: 20px 0;
+} 
+
+.movie-container select {
+    border: 0;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-left: 10px;
+    padding: 5px 15px 5px 15px;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+}
+
+
