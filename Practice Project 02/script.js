@@ -7,4 +7,6 @@ const movieSelect = document.getElementById('movie');
 
 const ticketPrice = +movieSelect.value;
 
-console.log(ticketPrice);
+container.addEventListener('click', e => {
+    console.log(e.target);
+})
