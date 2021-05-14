@@ -5,8 +5,29 @@ const count = document.getElementById('count');
 const total = document.getElementById('total');
 const movieSelect = document.getElementById('movie');
 
-const ticketPrice = +movieSelect.value;
+let ticketPrice = +movieSelect.value;
 
+function updateSelectedCount() {
+    const selectedSeats = document.querySelectorAll('.row .seat.selected');
+    const seatsIndex = [...selectedSeats].map(seat => [...seats].indexOf(seat));
+    const selectedSeatsCount = selectedSeats.length;
+    count.innerText = selectedSeatsCount;
+    total.innerText = selectedSeatsCount * ticketPrice;
+}
+
+// Event Listeneres
+// 1. Event Listener for container to check for click on seats
 container.addEventListener('click', e => {
-    console.log(e.target);
+    if(e.target.classList.contains('seat') &&
+        !e.target.classList.contains('occupied')
+    ) {
+        e.target.classList.toggle('selected');
+        updateSelectedCount();
+    }
+})
+
+// 2. Event Listener for movie select
+movieSelect.addEventListener('change', e => {
+    ticketPrice = +e.target.value;
+    updateSelectedCount();
 })
