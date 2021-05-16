@@ -37,34 +37,5 @@ form.addEventListener('submit', function(e) {
     // Stop page from reloading on submit
     e.preventDefault();
 
-    // Check to see if fields meet required field requirement
-    // Check if username is empty
-    if(username.value === '')  {
-        showError(username, 'Username is required');
-    } else {
-        showSuccess(username);
-    }
 
-    // Check if email is empty
-    if(email.value === '')  {
-        showError(email, 'Email is required');
-    } else if (!isValidEmail(email.value)) {
-        showError (email, 'Email is inavlid')
-    } else {
-        showSuccess(email);
-    }
-
-    // Check if password is empty
-    if(password.value === '')  {
-        showError(password, 'Password is required');
-    } else {
-        showSuccess(password);
-    }
-
-    // Check if password2 is empty
-    if(password2.value === '')  {
-        showError(password2, 'Confirm Password is required');
-    } else {
-        showSuccess(password2);
-    }
 });
