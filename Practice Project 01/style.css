@@ -56,7 +56,7 @@ body {
     margin-right: 30px;
     position: relative;
     margin-top: 0px;
-    /* float: left; */
+    float: right;
 }
 
 .container a {
