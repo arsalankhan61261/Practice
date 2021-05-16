@@ -40,7 +40,7 @@ body {
     bottom: 0px;
     left: 0px;
     opacity: 0.8;
-    background-image: url('Images/background1.jpg');
+    background-image: url('Images/background0.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -48,14 +48,15 @@ body {
 }
 
 .container {
-    background-color: transparent;
+    background-color: gainsboro;
     border-radius: 5px;
     box-shadow: 0 2px 12px rgba(0,0,0, 0.3);
     width: 400px;
+    opacity: 0.9;
     margin-right: 30px;
     position: relative;
     margin-top: 0px;
-    float: right;
+    /* float: left; */
 }
 
 .container a {
