@@ -25,6 +25,11 @@ function showSuccess(input) {
    formControl.className = 'form-control success'; 
 }
 
+// Function to check if email is valid
+function isValidEmail(email) {
+    
+}
+
 // Event Listeners
 // Create event listener for submit button
 form.addEventListener('submit', function(e) {
