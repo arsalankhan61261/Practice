@@ -48,6 +48,8 @@ form.addEventListener('submit', function(e) {
     // Check if email is empty
     if(email.value === '')  {
         showError(email, 'Email is required');
+    } else if (!isValidEmail(email.value)) {
+        showError (email, 'Email is inavlid')
     } else {
         showSuccess(email);
     }
