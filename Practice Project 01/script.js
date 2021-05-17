@@ -31,11 +31,28 @@ function isValidEmail(email) {
     return re.test(String(email).toLowerCase());
 }
 
+// Function to check if required fields have data
+function checkRequired(inputArray) {
+    inputArray.forEach(function(input) {
+        if (input.value === '') {
+            console.log(input.id);
+            showError(input, `${getFieldId(input)} is required`);
+        } else {
+            showSuccess(input);
+        }      
+    });
+}
+
+// Function to get the id of input field
+function getFieldId(input) {
+    return input.id.charAt(0).toUpperCase() + input.id.slice(1);
+}
+
 // Event Listeners
 // Create event listener for submit button
 form.addEventListener('submit', function(e) {
     // Stop page from reloading on submit
     e.preventDefault();
 
-
+    checkRequired([username,email,password,password2]);
 });
