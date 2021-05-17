@@ -48,6 +48,7 @@ function getFieldId(input) {
     return input.id.charAt(0).toUpperCase() + input.id.slice(1);
 }
 
+
 // Event Listeners
 // Create event listener for submit button
 form.addEventListener('submit', function(e) {
