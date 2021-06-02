@@ -17,13 +17,48 @@ function toggleVideoStatus() {
 // Create function for updating the play / pause icon
 function updatePlayIcon() {
     if (video.paused) {
-        play.innerHTML = '<i class="fa fa-play fa-2x"></i>'
+        play.innerHTML = '<i class="fas fa-play-circle fa-2x"></i>'
     } else {
-        play.innerHTML = '<i class="fa fa-pause fa-2x"></i>'
+        play.innerHTML = '<i class="fas fa-pause-circle fa-2x"></i>'
     }
 }
 
 // Create function to update the progress
+function updateProgress() {
+    // const video = document.getElementById('video');
+    let duration = Math.floor((video.duration) - Math.floor(video.currentTime));
+    let countdown = video.duration - video.currentTime
+    const progress = document.getElementById('progress');
+        progress.value = (video.currentTime / video.duration) * 100;
+        
+       
+        // const timestamp = document.getElementById('timestamp');
+    
+        // Set the time for timestamp
+        function updateCountdown(){
+        let mins = Math.floor((video.duration - video.currentTime) / 60);
+        if(mins < 10) {
+            mins = '0' + String(mins);
+        }
+    
+        let secs = Math.floor((video.duration - video.currentTime) % 60);
+        if(secs < 10) {
+            secs = '0' + String(secs);
+        }
+          
+    
+    timestamp.innerHTML = `${mins}:${secs}`;
+    countdown--; 
+    
+    }
+    setInterval(updateCountdown, 1000);
+    console.log(progress.value);
+    console.log(duration);
+     video.addEventListener('timeupdate', updateCountdown);
+    
+     console.log(countdown);
+    
+    }
 
 // Create funtion to  stop the video
 function stopVideo() {
@@ -32,6 +67,10 @@ function stopVideo() {
 }
 
 // Create function to update the video progress using the slider
+function setVideoProgress() {
+    video.currentTime = (+progress.value * video.duration) / 100;
+     
+}
 
 
 // Event Listeners
