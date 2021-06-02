@@ -46,11 +46,11 @@ h1 {
     color: white;
 }
 
-.controls .fa-play {
+.controls .fa-play-circle {
     color: #e7b76ebe;
 }
 
-.controls .fa-stop {
+.controls .fa-stop-circle {
     color: #5050da98;
     margin-right: 10px;
 }
