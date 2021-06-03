@@ -25,14 +25,9 @@ function updatePlayIcon() {
 
 // Create function to update the progress
 function updateProgress() {
-    // const video = document.getElementById('video');
     let duration = Math.floor((video.duration) - Math.floor(video.currentTime));
     let countdown = video.duration - video.currentTime
-    const progress = document.getElementById('progress');
         progress.value = (video.currentTime / video.duration) * 100;
-        
-       
-        // const timestamp = document.getElementById('timestamp');
     
         // Set the time for timestamp
         function updateCountdown(){
@@ -45,18 +40,12 @@ function updateProgress() {
         if(secs < 10) {
             secs = '0' + String(secs);
         }
-          
     
     timestamp.innerHTML = `${mins}:${secs}`;
     countdown--; 
     
     }
     setInterval(updateCountdown, 1000);
-    console.log(progress.value);
-    console.log(duration);
-     video.addEventListener('timeupdate', updateCountdown);
-    
-     console.log(countdown);
     
     }
 
@@ -71,7 +60,6 @@ function setVideoProgress() {
     video.currentTime = (+progress.value * video.duration) / 100;
      
 }
-
 
 // Event Listeners
 // 1. Event listener for the video player
