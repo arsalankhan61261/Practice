@@ -25,7 +25,8 @@ function updatePlayIcon() {
 
 // Create function to update the progress
 function updateProgress() {
-    let duration = Math.floor((video.duration) - Math.floor(video.currentTime));
+    let duration = Math.floor(video.duration) - Math.floor(video.currentTime);
+    console.log(duration);
     let countdown = video.duration - video.currentTime
         progress.value = (video.currentTime / video.duration) * 100;
     
