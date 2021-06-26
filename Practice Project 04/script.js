@@ -16,7 +16,6 @@ function calculate() {
     fetch(`https://v6.exchangerate-api.com/v6/f28b90085b7571e121761388/pair/${currencyOneCode}/${currencyTwoCode}`)
         .then(res => res.json())
         .then(data => {
-            console.log(data.conversion_rate);
             // Get the Conversion Rate from Currency One to Currency Two
             const conversionRate = data.conversion_rate;
             // Updte the DOM to diplay the conversion rate
