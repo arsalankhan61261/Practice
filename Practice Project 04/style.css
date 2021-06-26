@@ -84,8 +84,14 @@ p {
 
 .rate {
     font-size: 16px;
-    padding: 0 10px;
-    /* display: flex; */
+    margin: 0;
+    border: 2px solid #b4846c;
+    border-radius: 5px;
+    background-color: #ffeedb;
+    font-weight: bold;
+    padding: 6px 10px;
+    position: fixed;
+    margin-top: 150px;
 }
 
 
