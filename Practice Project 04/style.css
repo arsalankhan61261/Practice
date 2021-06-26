@@ -94,6 +94,23 @@ p {
     margin-top: 150px;
 }
 
+.link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 90px;
+}
+
+.link a {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 15px;
+    border: 2px solid #b4846c;
+    background-color: #ffeedb;
+    padding: 2px 10px;
+    border-radius: 5px;
+}
 
 
 
