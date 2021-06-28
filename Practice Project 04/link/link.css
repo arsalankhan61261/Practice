@@ -1,0 +1,84 @@
+* {
+    box-sizing: border-box;
+}
+
+.bg-img {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.9;
+    background-image: url('Practice Project 04/Images/PG1.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    /* display: flex; */
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: center;
+    /* height: 100vh; */
+    margin: 0;
+    /* padding: 20px; */
+}
+
+h1 {
+    color: #0a1d37;
+    text-align: center;
+    margin-top: 100px;
+}
+
+p {
+    text-align: center;
+    font-weight: bold;
+}
+
+.btn {
+    background-color: #0a1d37;
+    color: #fcdec0;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 6px 10px;
+    font-size: 13px;
+    width: 200px;
+    outline: none;
+    margin-top: 20px;
+    box-shadow: 0 2px 12px rgba(0,0,0, 0.9);
+}
+.reset-container {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.currency {
+    padding: 40px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.currency select {
+    padding: 10px 20px 10px 10px;
+    border: 1px solid #b4846c;
+    font-size: 16px;
+    background: #ffeedb;
+    outline: none;
+    border-radius: 5px;
+}
+
+.rate {
+    font-size: 16px;
+    margin: 0;
+    border: 2px solid #b4846c;
+    border-radius: 5px;
+    background-color: #ffeedb;
+    font-weight: bold;
+    padding: 6px 10px;
+    position: fixed;
+    margin-top: 150px;
+}
