@@ -98,6 +98,16 @@ p {
     justify-content: space-around;
     font-size: 15px;
     padding: 10px;
-    width: 100%;
-    
+    width: 100%;   
 }
+
+.data:nth-child(even) {
+    background-color: white;
+}
+
+.data:nth-child(odd) {
+    background-color: #313131;
+    color: #fff;
+}
+
+
