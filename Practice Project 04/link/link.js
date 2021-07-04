@@ -1,7 +1,6 @@
 // Get DOM Elements
 const currencyAll = document.getElementById('currency-all');
 const reset = document.getElementById('reset');
-const rate = document.getElementById('rate');
 const amountAll = document.getElementById('amount-all');
 const exchangeRatesAll = document.getElementById('exchange-rates');
 
