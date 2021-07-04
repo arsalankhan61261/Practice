@@ -37,7 +37,7 @@ p {
     font-weight: bold;
 }
 
-.btn {
+/* .btn {
     background-color: #0a1d37;
     color: #fcdec0;
     cursor: pointer;
@@ -48,7 +48,8 @@ p {
     outline: none;
     margin-top: 20px;
     box-shadow: 0 2px 12px rgba(0,0,0, 0.9);
-}
+} */
+
 .reset-container {
     align-items: center;
     justify-content: center;
@@ -68,6 +69,7 @@ p {
     font-size: 16px;
     background: #ffeedb;
     outline: none;
+    margin-right: 20px;
     border-radius: 5px;
 }
 
@@ -78,7 +80,7 @@ p {
     justify-content: space-around;
     border: 1px solid #b4846c;
     border-radius: 5px;
-    background-color: #ffeedb;
+    background-color: #ffee;
 }
 
 .currency input {
@@ -89,7 +91,7 @@ p {
     padding: 5px;
     text-align: right;
     border-radius: 5px;
-    margin-left: 40px;
+    margin-left: 20px;
     outline: none;
 }
 
