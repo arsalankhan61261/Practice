@@ -1,6 +1,6 @@
 // Get DOM Elements
 const currencyAll = document.getElementById('currency-all');
-const reset = document.getElementById('reset');
+// const reset = document.getElementById('reset');
 const amountAll = document.getElementById('amount-all');
 const exchangeRatesAll = document.getElementById('exchange-rates');
 
@@ -52,8 +52,6 @@ async function getExchangeRates() {
 const opt = document.querySelector('.currency-name');
 
 console.log(opt.value);
-
-
 
 
 //Event Listener
