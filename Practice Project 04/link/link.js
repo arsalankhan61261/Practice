@@ -1,6 +1,5 @@
 // Get DOM Elements
 const currencyAll = document.getElementById('currency-all');
-// const reset = document.getElementById('reset');
 const amountAll = document.getElementById('amount-all');
 const exchangeRatesAll = document.getElementById('exchange-rates');
 
@@ -11,18 +10,11 @@ function format2Currency(number) {
 
 // Fetch exchange rates and update the DOM
 function calculate() {
-    // const xyz = currencyAll;
-    // currencyAll.innerHTML = '<option>Select a Country...</option>';
-    // if (currencyAll !== xyz) {
-    
-    // Get the currency code
     const currencyAllCode = currencyAll.value;
     
     // Send request to ExchangeRate-API for conversion rates for the base currency
 async function getExchangeRates() {
-    // Get the currency code for the base currency
-    // const currencyAll = currencyAll.value;
-    // console.log(app2CurrencyCode);
+    
     // wait for the result from API
     const res = await fetch(`https://v6.exchangerate-api.com/v6/ff5446d657010e0e02233999/latest/${currencyAllCode}`);
     // Wait for response to convert into JSON
@@ -57,15 +49,7 @@ console.log(opt.value);
 //Event Listener
 amountAll.addEventListener("input", getExchangeRates);
 console.log(getExchangeRates());
-    // // Send Request to ExchangeRate-API for conversion rates for currency all
-    // fetch(`https://v6.exchangerate-api.com/v6/f28b90085b7571e121761388/latest/${currencyAllCode}`)
-    //     .then(res => res.json())
-    //     .then(data => { console.log(data)
-    //         // Get the conversion rates from currency all
-    //         const conversionRates = data.conversion_rates;
-    //         // Update tha DOM to display the Converion Rate
-    //         rate.innerText = conversionRates;
-    //     });
+
 };
 
 // };
