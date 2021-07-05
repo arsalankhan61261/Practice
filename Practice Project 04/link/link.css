@@ -80,6 +80,7 @@ p {
     justify-content: space-around;
     border: 1px solid #b4846c;
     width: 700px;
+    margin-left: 325px;
     border-radius: 5px;
     background-color: #ffee;
 }
