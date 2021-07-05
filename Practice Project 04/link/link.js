@@ -42,9 +42,7 @@ async function getExchangeRates() {
 }
 
 const opt = document.querySelector('.currency-name');
-
 console.log(opt.value);
-
 
 //Event Listener
 amountAll.addEventListener("input", getExchangeRates);
@@ -52,7 +50,6 @@ console.log(getExchangeRates());
 
 };
 
-// };
 
 // Event Listeners
 // Event on change a country in currency all
