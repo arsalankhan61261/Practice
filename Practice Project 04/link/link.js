@@ -55,7 +55,6 @@ console.log(opt.value);
 
 
 //Event Listener
-
 amountAll.addEventListener("input", getExchangeRates);
 console.log(getExchangeRates());
     // // Send Request to ExchangeRate-API for conversion rates for currency all
