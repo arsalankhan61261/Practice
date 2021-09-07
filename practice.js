@@ -3,65 +3,67 @@ const button = document.getElementById('btn');
 
 const data = [
     {
-        name: 'John',
-        text: "I'm Angry",
+        name: 'Arsalan',
+        text: "Arsalan is a Good person",
         lang: "en-US"
     },
     {
-        name: 'William',
-        text: "I'm Happy",
-        lang: "sv-SE"
-    },
-    {
-        name: 'Lisa',
-        text: "I'm Hungry",
+        name: 'Asif',
+        text: "Asif is Happy",
         lang: "pl-PL"
     },
     {
-        name: 'Peter',
-        text: "I want a Ciggrate",
+        name: 'John',
+        text: "John want some cigrattes",
+        lang: "pl-PL"
+    },
+    {
+        name: 'Wilson',
+        text: "Willson needs a job",
         lang: "fr-CA"
     }
 ];
 
 let voicesArray = [];
 
-const message = new SpeechSynthesisUtterance();
-/* console.log(message); */
-function showSelect () {
-const voices = data.forEach((voice) => {
-      /* console.log(voice); */
-      /* console.log(voice.lang); */
-      /* console.log(voice.name); */
-      let option = document.createElement('option');
+// const speech = window.speechSynthesis;
+
+function renderVoices() {
+    data.forEach((voice) => {
+        /* console.log(voice); */
+        let option = document.createElement('option');
         option.textContent = `${voice.name} (${voice.lang})`;
-        
-        // option.setAttribute('data-lang', voice.lang);
-        // option.setAttribute('data-name', voice.name);
-        selectBox.appendChild(option);
        
-        // message.lang = voice.lang;
-        // message.text = voice.text;
-        // console.log(message);
-});
+        option.setAttribute('data-lang', voice.lang);
+        option.setAttribute('data-name', voice.name);
+        option.setAttribute('value', option.value);
+        selectBox.appendChild(option);  
+    })
+    
 };
 
-// speechSynthesis.speak(message);
-// console.log(message);
+renderVoices();
 
-function speakVoice() {
-    voicesArray = data;
+function getIndex() {
+    
+};
+
+
+
+function getText() {
+    var a = selectBox.options[selectBox.selectedIndex].value;
+    console.log(a);
+	voicesArray = data;
     voicesArray.forEach((voice) => {
-        message.lang = voice.lang;
-        message.text = voice.text;
-        speechSynthesis.speak(message);
-        console.log(speech);
+    
+    const message = new SpeechSynthesisUtterance();
+	message.text = voice.text;
+    message.lang = voice.lang;
+    console.log(message);
+    speechSynthesis.speak(message);
     })
 };
 
-
-button.addEventListener('click', () => { 
-    speakVoice();
+button.addEventListener('click', () => {
+    getText();
 });
-
-showSelect();
