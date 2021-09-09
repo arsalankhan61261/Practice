@@ -54,5 +54,9 @@ button.addEventListener('click', () => {
         speechSynthesis.speak(message);
     } else {
         return;
-    }
+    };
+
+    selectBox.addEventListener('change', (e) => {
+        e.preventDefault();
+    })
 });
