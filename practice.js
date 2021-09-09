@@ -37,18 +37,11 @@ function renderVoices() {
         option.setAttribute('data-lang', voice.lang);
         option.setAttribute('data-name', voice.name);
         option.setAttribute('value', option.value);
-        selectBox.appendChild(option);  
-    })
-    
+        selectBox.appendChild(option);
+    });
 };
 
 renderVoices();
-
-function getIndex() {
-    
-};
-
-
 
 function getText() {
     var a = selectBox.options[selectBox.selectedIndex].value;
@@ -56,12 +49,13 @@ function getText() {
 	voicesArray = data;
     voicesArray.forEach((voice) => {
     
-    const message = new SpeechSynthesisUtterance();
-	message.text = voice.text;
-    message.lang = voice.lang;
-    console.log(message);
-    speechSynthesis.speak(message);
+        const message = new SpeechSynthesisUtterance();
+	    message.text = voice.text;
+        message.lang = voice.lang;
+        // console.log(message);
+        speechSynthesis.speak(message);
     })
+    
 };
 
 button.addEventListener('click', () => {
