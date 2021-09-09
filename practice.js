@@ -10,54 +10,49 @@ const data = [
     {
         name: 'Asif',
         text: "Asif is Happy",
-        lang: "pl-PL"
+        lang: "de-DE"
     },
     {
         name: 'John',
         text: "John want some cigrattes",
-        lang: "pl-PL"
+        lang: "it-IT"
     },
     {
         name: 'Wilson',
         text: "Willson needs a job",
-        lang: "fr-CA"
+        lang: "pl-PL"
     }
 ];
 
-let voicesArray = [];
+let voicesArray = []; 
 
-// const speech = window.speechSynthesis;
+/* const speech = window.speechSynthesis; */
 
-function renderVoices() {
+function selectText() {
     data.forEach((voice) => {
-        /* console.log(voice); */
+        // console.log(voice);
         let option = document.createElement('option');
         option.textContent = `${voice.name} (${voice.lang})`;
+        /* console.log(voice.text); */
        
-        option.setAttribute('data-lang', voice.lang);
-        option.setAttribute('data-name', voice.name);
-        option.setAttribute('value', option.value);
+        option.setAttribute('lang', voice.lang);
+        option.setAttribute('name', voice.name);
+        option.setAttribute('value', voice.text);
         selectBox.appendChild(option);
-    });
-};
-
-renderVoices();
-
-function getText() {
-    var a = selectBox.options[selectBox.selectedIndex].value;
-    console.log(a);
-	voicesArray = data;
-    voicesArray.forEach((voice) => {
-    
-        const message = new SpeechSynthesisUtterance();
-	    message.text = voice.text;
-        message.lang = voice.lang;
-        // console.log(message);
-        speechSynthesis.speak(message);
     })
-    
+    // console.log(selectBox);
 };
+
+selectText();
 
 button.addEventListener('click', () => {
-    getText();
+    const message = new SpeechSynthesisUtterance();
+    message.text = selectBox.value;
+    message.lang = selectBox.options[selectBox.selectedIndex].lang;
+    // console.log(message);
+    if ( selectBox.selectedIndex = selectBox.value ) {
+        speechSynthesis.speak(message);
+    } else {
+        return;
+    }
 });
