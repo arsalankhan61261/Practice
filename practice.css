@@ -1,0 +1,27 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    position: relative;
+}
+
+.btn {
+    cursor: pointer;
+    padding: 5px 4px;
+    background-color: rgba(105, 87, 87, 0.308);
+    border: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    transition: translate(-100);
+}
+
+.select-box {
+    outline: none;
+}
