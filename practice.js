@@ -49,7 +49,7 @@ button.addEventListener('click', () => {
     const message = new SpeechSynthesisUtterance();
     message.text = selectBox.value;
     message.lang = selectBox.options[selectBox.selectedIndex].lang;
-    // console.log(message);
+    console.log(message);
     if ( selectBox.selectedIndex = selectBox.value ) {
         speechSynthesis.speak(message);
     } else {
