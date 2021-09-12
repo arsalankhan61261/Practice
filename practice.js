@@ -24,7 +24,7 @@ const data = [
     }
 ];
 
-let voicesArray = []; 
+let voicesArray = [];
 
 /* const speech = window.speechSynthesis; */
 
@@ -49,14 +49,23 @@ button.addEventListener('click', () => {
     const message = new SpeechSynthesisUtterance();
     message.text = selectBox.value;
     message.lang = selectBox.options[selectBox.selectedIndex].lang;
-    console.log(message);
+    // console.log(message);
     if ( selectBox.selectedIndex = selectBox.value ) {
         speechSynthesis.speak(message);
     } else {
         return;
     };
 
-    selectBox.addEventListener('change', (e) => {
-        e.preventDefault();
-    })
+    function xyz () {
+        if ( selectBox.value == message.text ) {
+            e.preventDefault();
+        } else {
+            return;
+        }
+    };
+    xyz ();
 });
+
+
+
+selectBox.addEventListener('change', xyz);
