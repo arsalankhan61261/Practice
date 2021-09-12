@@ -14,7 +14,7 @@ body {
     cursor: pointer;
     padding: 5px 4px;
     background-color: rgba(105, 87, 87, 0.308);
-    border: none;
+    border: 1px solid;
     border-radius: 5px;
 }
 
