@@ -40,7 +40,7 @@ function selectText() {
         option.setAttribute('value', voice.text);
         selectBox.appendChild(option);
     })
-    // console.log(selectBox);
+    // console.log(selectBox.options.selectedIndex);
 };
 
 selectText();
@@ -55,17 +55,4 @@ button.addEventListener('click', () => {
     } else {
         return;
     };
-
-    function xyz () {
-        if ( selectBox.value == message.text ) {
-            e.preventDefault();
-        } else {
-            return;
-        }
-    };
-    xyz ();
 });
-
-
-
-selectBox.addEventListener('change', xyz);
