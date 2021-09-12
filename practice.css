@@ -18,10 +18,10 @@ body {
     border-radius: 5px;
 }
 
-.btn:hover {
-    transition: translate(-100);
-}
-
 .select-box {
     outline: none;
+    padding: 08px 10px;
+    margin-right: 10px;
+    background: rgb(43, 42, 42);
+    color: white;
 }
